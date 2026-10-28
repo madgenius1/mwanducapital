@@ -1,6 +1,11 @@
-"use client"
+"use client";
+
 import { company } from "../../config/company";
 import Logo from "./Logo";
+
+// Defined at the top level of the file (runs once on module load)
+const currentYear = new Date().getFullYear();
+
 export default function Footer({
   showAbroad = false,
 }: {
@@ -32,6 +37,7 @@ export default function Footer({
       ],
     ],
   ] as const;
+
   return (
     <footer className="border-t border-line bg-paper pb-24 pt-14 md:pb-10">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -61,7 +67,7 @@ export default function Footer({
           ))}
         </div>
         <p className="mt-12 text-sm text-muted">
-          © {new Date().getFullYear()} {company.name}. Investing involves risk.
+          © {currentYear} {company.name}. | Investing involves risk.
         </p>
       </div>
     </footer>

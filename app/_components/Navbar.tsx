@@ -4,13 +4,15 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { useSignup } from "./SignupModal";
 import Logo from "./Logo";
 import { track } from "../../lib/integrations";
+import Link from "next/link";
+
 // About lives in the footer. Add ["About", "/about"] here to bring it back to the main nav.
 const links = [
   ["How it works", "/#how-it-works"],
   ["Features", "/features"],
   ["Why Mwandu", "/#why-mwandu"],
   ["Investors & Partners", "/investors"],
-  ["FAQ", "/#faq"],
+  ["About Us", "/about"],
 ];
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -55,15 +57,15 @@ export default function Navbar() {
       >
         <Logo />
         <div className="flex items-center gap-1 sm:gap-2 lg:gap-12">
-          <ul className="hidden items-center gap-9 text-[17px] text-ink lg:flex">
+          <ul className="hidden items-center gap-7 text-md text-ink lg:flex">
             {links.map(([l, h]) => (
               <li key={l}>
-                <a
+                <Link
                   href={h}
                   className="transition-colors duration-200 hover:text-violet"
                 >
                   {l}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -98,13 +100,13 @@ export default function Navbar() {
         >
           {links.map(([l, h]) => (
             <li key={l}>
-              <a
+              <Link
                 href={h}
                 onClick={() => setMenu(false)}
                 className="block border-b border-line/60 py-3.5 text-lg"
               >
                 {l}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
