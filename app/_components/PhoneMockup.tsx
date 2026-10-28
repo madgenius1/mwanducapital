@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from "react"
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
+import { AnimatePresence, motion, useReducedMotion } from "motion/react"
 import { Bell, ArrowUpRight, Wallet, TrendingUp } from "lucide-react"
 // All figures are illustrative. Replace with v1 app screenshots when supplied.
 const Row = ({ a, b, c }: { a: string; b: string; c?: string }) => (

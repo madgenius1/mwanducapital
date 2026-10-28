@@ -1,6 +1,6 @@
 "use client"
 import { createContext, useContext, useState, useCallback, useRef, useEffect, type ReactNode, type FormEvent } from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from "motion/react"
 import { X, Loader2, CheckCircle2 } from "lucide-react"
 import { submitSignup, track } from "../../lib/integrations"
 

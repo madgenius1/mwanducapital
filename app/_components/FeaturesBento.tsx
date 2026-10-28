@@ -1,5 +1,5 @@
 import Reveal from "./Reveal"
-import { icons } from "./featureIcons"
+import { icons } from "../../config/featureIcons"
 import type { Feature } from "../../config/features"
 // Explicit class names so Tailwind can see them. 12-column grid from md; two columns on sm; one on mobile.
 // variant "home" uses each feature's `home` layout (max 6); "page" uses `bento`.

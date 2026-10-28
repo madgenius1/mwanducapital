@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
 import { Plus } from "lucide-react"
 import Reveal from "./Reveal"
 import { track } from "../../lib/integrations"
+import { AnimatePresence,motion } from 'motion/react';
 export default function FAQ({ items }: { items: { q: string; a: string }[] }) {
   const [open, setOpen] = useState<number | null>(null)
   return (

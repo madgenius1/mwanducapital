@@ -1,7 +1,7 @@
 "use client"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import { useReducedMotion } from "framer-motion"
+import { useReducedMotion } from "motion/react"
 import Reveal from "./Reveal"
 import Photo from "./Photo"
 import { track } from "../../lib/integrations"
