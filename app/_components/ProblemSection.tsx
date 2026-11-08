@@ -11,8 +11,11 @@ export default function ProblemSection() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
       <div className="grid items-end gap-8 lg:grid-cols-2">
-        <Reveal><p className="text-sm font-semibold tracking-[.18em] text-violet">THE PROBLEM</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">Wanting to invest is the easy part.</h2></Reveal>
+        <Reveal><p className="text-sm font-semibold tracking-[.18em] text-violet">THE PROBLEMS</p>
+          <h2 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">Investment feels like an extra chore.</h2>
+                  <p className="mt-6 max-w-xl text-lg text-muted">People skip investing because identifying investing channels takes too much time.</p>
+
+          </Reveal>
         <Reveal delay={.1}><Photo {...images.problem} className="aspect-[16/9]" /></Reveal>
       </div>
       <div className="mt-10 grid gap-4 md:grid-cols-3">

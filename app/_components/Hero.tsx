@@ -9,9 +9,9 @@ export default function Hero({ showDiaspora = false }: { showDiaspora?: boolean 
   return (
     <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-14 lg:grid-cols-2 lg:px-8 lg:py-24">
       <div>
-        <Reveal><p className="text-sm font-semibold tracking-[.18em] text-violet">INVESTING, MADE CLEARER</p></Reveal>
+        <Reveal><p className="text-sm font-semibold tracking-[.18em] uppercase text-violet">Investing in Kenya, Made Clearer</p></Reveal>
         <Reveal delay={.08}><h1 className="mt-4 text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">A simpler way to invest in Kenya.</h1></Reveal>
-        <Reveal delay={.16}><p className="mt-6 max-w-xl text-lg text-muted">Mwandu brings your everyday money, Investment Account, NSE holdings, and learning journey into one simpler experience.</p></Reveal>
+        <Reveal delay={.16}><p className="mt-6 max-w-xl text-lg text-muted">Mwandu brings your everyday money, smart investing tools, and automated portfolios into one simpler, unified experience.</p></Reveal>
         {showDiaspora && (
           <Reveal delay={.22}><p className="mt-4 text-sm text-muted"><a href="/diaspora" className="underline underline-offset-4 hover:text-violet">Based outside Kenya?</a> Mwandu is being built with you in mind.</p></Reveal>)}
         <Reveal delay={.28} className="mt-8 flex flex-wrap gap-3">
